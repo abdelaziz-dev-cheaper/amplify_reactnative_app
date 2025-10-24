@@ -7,12 +7,13 @@ backend:
         - nvm install 22
         - nvm use 22
         - npm install -g npm@latest
+        - npm install -g @aws-amplify/backend-cli
         - echo "✅ Node version = $(node -v)"
         - echo "✅ NPM version = $(npm -v)"
     build:
       commands:
         - echo "🚀 Deploying Amplify Gen 2 backend"
-        - npx ampx pipeline-deploy --branch $AWS_BRANCH --app-id $AWS_APP_ID
+        - ampx pipeline-deploy --branch $AWS_BRANCH --app-id $AWS_APP_ID
   cache:
     paths:
       - node_modules/**/*
