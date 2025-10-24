@@ -9,12 +9,15 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@aws-amplify/ui-react-native": "^2.6.2",
+    "aws-amplify": "^6.15.7",
     "expo": "~54.0.18",
     "expo-status-bar": "~3.0.8",
     "react": "19.1.0",
     "react-native": "0.81.5"
   },
   "devDependencies": {
+    "@aws-amplify/backend": "^1.16.1",
     "@types/react": "~19.1.0",
     "typescript": "~5.9.2"
   },
